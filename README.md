@@ -4,6 +4,7 @@ Projeto de teste de Gestão de Beneficiarios Ekan
 Começando por aqui...
 Realizar o clone da aplicação no GitHub.
 Descompactar o projeto no diretorio desejado.
+Dentro da pasta do projeto estou enviando o json que esta em uma pasta chamada(JSON) para chamada no postman e as collections também em uma pasta separada chamada (POSTMAN_Colection)
 Executar o projeto a partir da TesteEkanApplication, ao termino do processo o banco H2 e a UI do Swagger estaram disponiveis para acesso via browser, conforme informações abaixo:
 Acesso ao H2
 Para este projeto foi utilizado o banco de dados H2.
