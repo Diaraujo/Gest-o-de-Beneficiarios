@@ -1,0 +1,60 @@
+Cadastro beneficiario
+
+{
+        "id": 1,
+        "nome": "Diogo",
+        "telefone": "123456",
+        "dataNascimento": "1985-01-25T00:00:00.000+00:00",
+        "dataInclusao": "2024-07-18T00:00:00.000+00:00",
+        "dataAtualização": null
+    }
+
+
+{
+        "id": 2,
+        "nome": "Amanda",
+        "telefone": "123456",
+        "dataNascimento": "1985-01-10T00:00:00.000+00:00",
+        "dataInclusao": "2024-07-18T00:00:00.000+00:00",
+        "dataAtualização": null
+    }
+    {
+        "id": 3,
+        "nome": "Lavinia",
+        "telefone": "123456",
+        "dataNascimento": "1985-01-20T00:00:00.000+00:00",
+        "dataInclusao": "2024-07-18T00:00:00.000+00:00",
+        "dataAtualização": null
+    }
+    {
+        "id": 4,
+        "nome": "Thomas",
+        "telefone": "123456",
+        "dataNascimento": "1985-01-12T00:00:00.000+00:00",
+        "dataInclusao": "2024-07-18T00:00:00.000+00:00",
+        "dataAtualização": null
+    }
+	
+	Cadastro documento
+	
+	
+    {
+        "id": 1,
+        "tipoDocumento": "RG",
+        "descricao": "bla",
+        "dataInclusao": "2024-07-18",
+        "dataAtualizacao": null,
+        "beneficiario": {
+            "id": 1,
+            "nome": "Diogo",
+            "telefone": "123456",
+            "dataNascimento": "1985-01-25",
+            "dataInclusao": "2024-07-18",
+            "dataAtualização": null
+        }
+    }
+
+	
+	
+	INSERT INTO TB_DOCUMENTO (BENEFICIARIO_ID) VALUES(1);
+	UPDATE TB_DOCUMENTO SET BENEFICIARIO_ID = 1 WHERE id = 1;

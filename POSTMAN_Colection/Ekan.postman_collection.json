@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "d4cb312a-8469-44a9-ab46-a005829ecdfc",
+		"name": "Ekan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"id\": 4,\r\n        \"nome\": \"Thomas\",\r\n        \"telefone\": \"123456\",\r\n        \"dataNascimento\": \"1985-01-12T00:00:00.000+00:00\",\r\n        \"dataInclusao\": \"2024-07-18T00:00:00.000+00:00\",\r\n        \"dataAtualização\": null\r\n    }\r\n    \r\n\r\n    \r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/beneficiarios/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"beneficiarios",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/beneficiarios/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"beneficiarios",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/beneficiarios/deletar/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"beneficiarios",
+						"deletar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar documentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/documentos/beneficiario/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documentos",
+						"beneficiario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar Documentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"tipoDocumento\": \"RG\",\r\n        \"descricao\": \"bla\",\r\n        \"dataInclusao\": \"2024-07-18T00:00:00.000+00:00\",\r\n        \"dataAtualizacao\": null,\r\n        \"beneficiario\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Diogo\",\r\n            \"telefone\": \"123456\",\r\n            \"dataNascimento\": \"1985-01-25\",\r\n            \"dataInclusao\": \"2024-07-18\",\r\n            \"dataAtualização\": null\r\n        }\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/documentos/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documentos",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
